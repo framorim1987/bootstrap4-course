@@ -1,6 +1,6 @@
 body{
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto;
 }
 .cursive-bold{
     font-family: 'Dancing Script', cursive;
@@ -20,4 +20,11 @@ body{
 }
 .cor-texto-1{
     color: darkred !important;
+}
+.cor-btn{
+    background-color: darkred;
+    color: white;
+}
+.card-border{
+    border: 1px solid darkred;
 }

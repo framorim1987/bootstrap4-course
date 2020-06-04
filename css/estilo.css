@@ -28,3 +28,11 @@ body{
 .card-border{
     border: 1px solid darkred;
 }
+.card-width{
+    max-width: 18rem;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}

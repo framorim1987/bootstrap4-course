@@ -21,7 +21,7 @@
 <body>
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand cursive-bold cor-texto-1 font-weight-bolder logo-size" href="#">Healthy Food</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Início<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Quem Somos</a>
-          <a class="nav-item nav-link" href="#">Receitas</a>
-          <a class="nav-item nav-link" href="#">Contato</a>
+          <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
         </div>
       </div>
     </nav>
@@ -41,7 +38,7 @@
   <main>
 
     <!-- Carrousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="10000"
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-ride="carousel" data-interval="10000"
       data-pause="hover">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -153,6 +150,50 @@
     </section>
 
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary p-4">
+    <p class="text-light text-center m-0">See more &rarr; github.com/framorim1987</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Type a message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn cor-btn">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
